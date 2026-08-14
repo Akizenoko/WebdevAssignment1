@@ -457,7 +457,7 @@ html{
     }
 
     #Bg_3rdLayer{
-        top: -200px;
+        top: -800px;
     }
 
 
@@ -518,9 +518,9 @@ html{
     }
 }
 
-@media (max-width: 493px){
+@media (max-width: 490px){
     body{
-        zoom: 0.1;
+        zoom: 0.2;
     }
 
     #Bg_1stLayer{
@@ -545,7 +545,44 @@ html{
     }
 
     #Content{
-        margin-top: 760px;
+        margin-top: 660px;
+        margin-bottom: -200px;
+        scale: 0.9;
+    }
+
+    #Details{
+    scale: 1.4;
+    width: 550px;
+    }
+
+@media (max-width: 325px){
+    body{
+        zoom: 0.15;
+    }
+
+    #Bg_1stLayer{
+        top: 765px;
+    }
+
+    #Bg_2ndLayer{
+        top: 460px;
+    }
+
+    #Bg_3rdLayer{
+        top: -600px;
+    }
+
+    #Number{
+        scale: 1.2;
+        transform: translate(0px, -220px);
+    }
+
+    #SecondContent #Number{
+        transform: translate(550px, -220px);
+    }
+
+    #Content{
+        margin-top: 660px;
         margin-bottom: -200px;
         scale: 0.9;
     }
