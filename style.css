@@ -123,7 +123,7 @@ header{
 #Socials p{
     margin-bottom: 25px;
     rotate: 90deg;
-    width: 80px;
+    width: 100px;
 }
 
 #Socials img{
@@ -356,9 +356,48 @@ footer{
 html{
     overflow-x: hidden;
 }
+
+/* Desktop */
+@media (max-width: 1498px){
+    body{
+        zoom: 0.6;
+    }
+
+    #Bg_1stLayer{
+        top: 765px;
+    }
+
+    #Bg_2ndLayer{
+        top: 360px;
+    }
+
+    #Bg_3rdLayer{
+        top: -800px;
+    }
+
+    #Number{
+        scale: 1.2;
+        transform: translate(0px, -220px);
+    }
+
+    #SecondContent #Number{
+        transform: translate(550px, -220px);
+    }
+
+    #Content{
+        margin-top: 1060px;
+        margin-bottom: -200px;
+        scale: 1.1;
+    }
+
+    #Details{
+        scale: 1;
+        width: 550px;
+    }
+}
  
 /* Tablet */
-@media (max-width: 1024px){
+@media (max-width: 1084px){
     body{
         zoom: 0.6;
     }
@@ -375,10 +414,24 @@ html{
         top: -200px;
     }
 
+    #Number{
+        scale: 1.2;
+        transform: translate(0px, -220px);
+    }
+
+    #SecondContent #Number{
+        transform: translate(550px, -220px);
+    }
+
     #Content{
-        margin-top: 0px;
+        margin-top: 200px;
         margin-bottom: -550px;
         scale: 0.7;
+    }
+
+    #Details{
+    scale: 1.4;
+    width: 550px;
     }
 }
  
@@ -414,7 +467,91 @@ html{
         scale: 0.7;
     }
 
+    #Details{
+    scale: 1.4;
+    width: 550px;
+    }
+
+
     footer{
         gap: 150px;
+    }
+
+}
+
+    /* Miscellanious */
+@media (max-width: 764px){
+    body{
+        zoom: 0.3;
+    }
+
+    #Bg_1stLayer{
+        top: 765px;
+    }
+
+    #Bg_2ndLayer{
+        top: 460px;
+    }
+
+    #Bg_3rdLayer{
+        top: -600px;
+    }
+
+    #Number{
+        scale: 1.2;
+        transform: translate(0px, -220px);
+    }
+
+    #SecondContent #Number{
+        transform: translate(550px, -220px);
+    }
+
+    #Content{
+        margin-top: 760px;
+        margin-bottom: -200px;
+        scale: 0.9;
+    }
+
+    #Details{
+    scale: 1.4;
+    width: 550px;
+    }
+}
+
+@media (max-width: 493px){
+    body{
+        zoom: 0.1;
+    }
+
+    #Bg_1stLayer{
+        top: 765px;
+    }
+
+    #Bg_2ndLayer{
+        top: 460px;
+    }
+
+    #Bg_3rdLayer{
+        top: -600px;
+    }
+
+    #Number{
+        scale: 1.2;
+        transform: translate(0px, -220px);
+    }
+
+    #SecondContent #Number{
+        transform: translate(550px, -220px);
+    }
+
+    #Content{
+        margin-top: 760px;
+        margin-bottom: -200px;
+        scale: 0.9;
+    }
+
+    #Details{
+    scale: 1.4;
+    width: 550px;
     }
 }
