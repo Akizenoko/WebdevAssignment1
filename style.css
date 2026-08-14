@@ -26,7 +26,7 @@ a{
 .bg{
     align-self: center;
     position: absolute;
-    scale: 0.992;
+    scale: 1;
     width: 100%;
 }
 
@@ -353,183 +353,68 @@ footer{
 
 /*Media Queries*/
 
-@media (max-width: 480px){
+html{
+    overflow-x: hidden;
+}
+ 
+/* Tablet */
+@media (max-width: 1024px){
+    body{
+        zoom: 0.6;
+    }
 
-.bg{
+    #Bg_1stLayer{
+        top: 765px;
+    }
+
+    #Bg_2ndLayer{
+        top: 460px;
+    }
+
+    #Bg_3rdLayer{
+        top: -200px;
+    }
+
+    #Content{
+        margin-top: 0px;
+        margin-bottom: -550px;
+        scale: 0.7;
+    }
+}
+ 
+/* Mobile */
+@media (max-width: 480px){
+    body{
+        zoom: 0.3;
+    }
+
+    .bg{
     align-self: center;
     position: absolute;
-    right: -270px;
-    scale: 2.5;
+    scale: 1;
     width: 100%;
-}
-    
-#Bg_1stLayer{
-    z-index: -1;
-    top: 700px;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0) 90%);
-}
+    }
 
-#Bg_2ndLayer{
-    z-index: -2;
-    opacity: 1;
-    top: 560px;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 75%);
-}
+    #Bg_1stLayer{
+        top: 765px;
+    }
 
-#Bg_3rdLayer{
-    z-index: -3;
-    top: 0px;
-    mask-image: linear-gradient(to top left, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
-}
+    #Bg_2ndLayer{
+        top: 460px;
+    }
+
+    #Bg_3rdLayer{
+        top: -200px;
+    }
 
 
-header{
-    color: var(--main-text-color);
-    font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    max-width: 1,760px;
-    max-height: 25px;
-    border: 1px solid white;
-}
+    #Content{
+        margin-top: 0px;
+        margin-bottom: -550px;
+        scale: 0.7;
+    }
 
-#Nav{
-    gap: 36px;
-    list-style: none;
-    align-items: center;
-    align-content: center;
-    font-size: 18px;
-    letter-spacing: 0px;
-    display: flex;
-    padding: 0px;
-}
-
-#Nav ul{
-    padding: 0px;
-}
-
-#Logo{
-    height: 24px;
-}
-
-#Account{
-    gap: 10px;
-    align-items: center;
-    align-content: center;
-    display: flex;
-    font-size: 17px;
-}
-
-#Account > img{
-    height: 24px;
-}
-
-
-
-#HeroSection{
-    height: 650px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin: 0px 0px;
-    padding: 0px 40px 0px 40px;
-}
-
-
-#Socials{
-    color: var(--main-text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    gap: 25px;
-    width: 24px;
-    height: 173px;
-    padding: 30px 0px 0px 0px ;
-    
-}
-
-#Socials p{
-    margin-bottom: 25px;
-    rotate: 90deg;
-    width: 80px;
-}
-
-#Socials img{
-    width: 24px;
-}
-
-#HeroContent{
-    margin-left: 175px ;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    letter-spacing: 0%;
-    margin-right: 130px;
-}
-
-#HeroContent h1{
-    width: 450px;
-    color: var(--lastly-text-color);
-    font-size: 38px;
-    line-height: 50px;
-    font-weight: 400;
-}
-
-#line{
-    height: 2px;
-    width: 72px;
-    border: 1px solid var(--secondary-text-color);
-}
-
-#Highlight{
-    gap: 24px;
-    align-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 18px;
-    letter-spacing: 6px;
-    font-weight: 400;
-    color: var(--secondary-text-color);
-}
-
-
-#Scroll{
-    gap: 16px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    width: 136px;
-    height: 24px;
-}
-
-#Scroll p{
-    font-size: 18px;
-    color: var(--main-text-color);
-}
-
-#Slider{
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--main-text-color);
-    max-width: 77px;
-    max-height: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    align-content: center;
-    gap: 40px;
-    border-right: var(--lastly-text-color) solid 3px;
-    padding: 20px 25px 20px 0px ;
-}
-
-#Slider p{
-    padding: 0%;
-    max-width: 43px;
-    max-width: 204px;
-}
-
+    footer{
+        gap: 150px;
+    }
 }
